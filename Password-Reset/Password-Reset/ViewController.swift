@@ -9,11 +9,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let stackView = UIStackView()
+    private let passwordTextView = PasswordTextView()
+    private let newPasswordTextField = PasswordTextField(placeholderText: "New Password")
+    private let repeatPasswordTextField = PasswordTextField(placeholderText: "Re-enter your password")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        style()
+        layout()
         // Do any additional setup after loading the view.
     }
 
 
 }
 
+extension ViewController {
+    private func style() {
+        stackView.addArrangedSubview(newPasswordTextField)
+        stackView.addArrangedSubview(repeatPasswordTextField)
+        
+        view.addSubview(stackView)
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.spacing = 20
+        stackView.axis = .vertical
+    }
+    
+    private func layout() {
+        NSLayoutConstraint.activate([
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 2)
+        ])
+    }
+}
