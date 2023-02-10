@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     private let passwordTextView = PasswordTextView()
     private let newPasswordTextField = PasswordTextField(placeholderText: "New Password")
     private let repeatPasswordTextField = PasswordTextField(placeholderText: "Re-enter your password")
-    
+    private let passwordCriteriaView = PasswordCriteriaView(text: "uppercase letter (A-Z)")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,8 @@ class ViewController: UIViewController {
 
 extension ViewController {
     private func style() {
-        stackView.addArrangedSubview(newPasswordTextField)
-        stackView.addArrangedSubview(repeatPasswordTextField)
+        stackView.addArrangedSubview(passwordCriteriaView)
+//        stackView.addArrangedSubview(repeatPasswordTextField)
         
         view.addSubview(stackView)
         
