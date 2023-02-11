@@ -45,9 +45,9 @@ class PasswordCriteriaView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 200, height: 40)
-    }
+//    override var intrinsicContentSize: CGSize {
+//        return CGSize(width: 200, height: 40)
+//    }
 }
 
 extension PasswordCriteriaView {
