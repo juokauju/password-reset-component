@@ -28,7 +28,7 @@ class PasswordTextField: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: 200, height: 60)
+        return CGSize(width: 200, height: 40)
     }
 }
 
@@ -61,8 +61,7 @@ extension PasswordTextField {
         errorMessageLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         errorMessageLabel.numberOfLines = 0
         errorMessageLabel.lineBreakMode = .byWordWrapping
-        errorMessageLabel.isHidden = false
-        errorMessageLabel.text = "Your password must meet the requirements below"
+        errorMessageLabel.isHidden = true
         
     }
     
