@@ -7,35 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C49FE0F29996F4400D9AE38 /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C49FE0E29996F4400D9AE38 /* PasswordCriteria.swift */; };
-		7C8EE1792992372D00EAAA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EE1782992372D00EAAA1B /* AppDelegate.swift */; };
-		7C8EE17D2992372D00EAAA1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EE17C2992372D00EAAA1B /* ViewController.swift */; };
-		7C8EE1822992373600EAAA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8EE1812992373600EAAA1B /* Assets.xcassets */; };
-		7C8EE1852992373600EAAA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8EE1832992373600EAAA1B /* LaunchScreen.storyboard */; };
-		7C8EE1912993B62600EAAA1B /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EE1902993B62600EAAA1B /* UITextField+Extension.swift */; };
-		7C8EE1942993C29800EAAA1B /* PaddedTextField+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EE1932993C29800EAAA1B /* PaddedTextField+Class.swift */; };
-		7C8EE1962993C74D00EAAA1B /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EE1952993C74D00EAAA1B /* PasswordTextField.swift */; };
-		7CA6C7E82996D59800F80C65 /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6C7E72996D59800F80C65 /* PasswordCriteriaView.swift */; };
-		7CE8EA1B299514C700233B27 /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8EA1A299514C700233B27 /* PasswordStatusView.swift */; };
+		7C49FDFA299930E500D9AE38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C49FDF9299930E500D9AE38 /* AppDelegate.swift */; };
+		7C49FDFE299930E500D9AE38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C49FDFD299930E500D9AE38 /* ViewController.swift */; };
+		7C49FE03299930EA00D9AE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C49FE02299930EA00D9AE38 /* Assets.xcassets */; };
+		7C49FE06299930EA00D9AE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C49FE04299930EA00D9AE38 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C49FE0E29996F4400D9AE38 /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
-		7C8EE1752992372D00EAAA1B /* Password-Reset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password-Reset.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C8EE1782992372D00EAAA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C8EE17C2992372D00EAAA1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C8EE1812992373600EAAA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C8EE1842992373600EAAA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7C8EE1862992373600EAAA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C8EE1902993B62600EAAA1B /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
-		7C8EE1932993C29800EAAA1B /* PaddedTextField+Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaddedTextField+Class.swift"; sourceTree = "<group>"; };
-		7C8EE1952993C74D00EAAA1B /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
-		7CA6C7E72996D59800F80C65 /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
-		7CE8EA1A299514C700233B27 /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
+		7C49FDF6299930E500D9AE38 /* UITextField-sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITextField-sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C49FDF9299930E500D9AE38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C49FDFD299930E500D9AE38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C49FE02299930EA00D9AE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C49FE05299930EA00D9AE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C49FE07299930EA00D9AE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C8EE1722992372D00EAAA1B /* Frameworks */ = {
+		7C49FDF3299930E500D9AE38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,108 +33,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C8EE16C2992372D00EAAA1B = {
+		7C49FDED299930E500D9AE38 = {
 			isa = PBXGroup;
 			children = (
-				7C8EE1772992372D00EAAA1B /* Password-Reset */,
-				7C8EE1762992372D00EAAA1B /* Products */,
+				7C49FDF8299930E500D9AE38 /* UITextField-sandbox */,
+				7C49FDF7299930E500D9AE38 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7C8EE1762992372D00EAAA1B /* Products */ = {
+		7C49FDF7299930E500D9AE38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C8EE1752992372D00EAAA1B /* Password-Reset.app */,
+				7C49FDF6299930E500D9AE38 /* UITextField-sandbox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C8EE1772992372D00EAAA1B /* Password-Reset */ = {
+		7C49FDF8299930E500D9AE38 /* UITextField-sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				7C8EE1782992372D00EAAA1B /* AppDelegate.swift */,
-				7C8EE17C2992372D00EAAA1B /* ViewController.swift */,
-				7CE8EA16299510E700233B27 /* Views */,
-				7C8EE18C299237B200EAAA1B /* Files */,
-				7C8EE1922993BD3400EAAA1B /* Utils */,
+				7C49FE0D2999313800D9AE38 /* Files */,
+				7C49FDF9299930E500D9AE38 /* AppDelegate.swift */,
+				7C49FDFD299930E500D9AE38 /* ViewController.swift */,
 			);
-			path = "Password-Reset";
+			path = "UITextField-sandbox";
 			sourceTree = "<group>";
 		};
-		7C8EE18C299237B200EAAA1B /* Files */ = {
+		7C49FE0D2999313800D9AE38 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C8EE1812992373600EAAA1B /* Assets.xcassets */,
-				7C8EE1832992373600EAAA1B /* LaunchScreen.storyboard */,
-				7C8EE1862992373600EAAA1B /* Info.plist */,
+				7C49FE04299930EA00D9AE38 /* LaunchScreen.storyboard */,
+				7C49FE07299930EA00D9AE38 /* Info.plist */,
+				7C49FE02299930EA00D9AE38 /* Assets.xcassets */,
 			);
 			name = Files;
-			sourceTree = "<group>";
-		};
-		7C8EE1922993BD3400EAAA1B /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				7C8EE1902993B62600EAAA1B /* UITextField+Extension.swift */,
-				7C8EE1932993C29800EAAA1B /* PaddedTextField+Class.swift */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		7CE8EA16299510E700233B27 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7C8EE1952993C74D00EAAA1B /* PasswordTextField.swift */,
-				7CE8EA19299514AA00233B27 /* PasswordStatusView */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		7CE8EA19299514AA00233B27 /* PasswordStatusView */ = {
-			isa = PBXGroup;
-			children = (
-				7CA6C7E72996D59800F80C65 /* PasswordCriteriaView.swift */,
-				7CE8EA1A299514C700233B27 /* PasswordStatusView.swift */,
-				7C49FE0E29996F4400D9AE38 /* PasswordCriteria.swift */,
-			);
-			name = PasswordStatusView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C8EE1742992372D00EAAA1B /* Password-Reset */ = {
+		7C49FDF5299930E500D9AE38 /* UITextField-sandbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C8EE1892992373600EAAA1B /* Build configuration list for PBXNativeTarget "Password-Reset" */;
+			buildConfigurationList = 7C49FE0A299930EA00D9AE38 /* Build configuration list for PBXNativeTarget "UITextField-sandbox" */;
 			buildPhases = (
-				7C8EE1712992372D00EAAA1B /* Sources */,
-				7C8EE1722992372D00EAAA1B /* Frameworks */,
-				7C8EE1732992372D00EAAA1B /* Resources */,
+				7C49FDF2299930E500D9AE38 /* Sources */,
+				7C49FDF3299930E500D9AE38 /* Frameworks */,
+				7C49FDF4299930E500D9AE38 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Password-Reset";
-			productName = "Password-Reset";
-			productReference = 7C8EE1752992372D00EAAA1B /* Password-Reset.app */;
+			name = "UITextField-sandbox";
+			productName = "UITextField-sandbox";
+			productReference = 7C49FDF6299930E500D9AE38 /* UITextField-sandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7C8EE16D2992372D00EAAA1B /* Project object */ = {
+		7C49FDEE299930E500D9AE38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					7C8EE1742992372D00EAAA1B = {
+					7C49FDF5299930E500D9AE38 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 7C8EE1702992372D00EAAA1B /* Build configuration list for PBXProject "Password-Reset" */;
+			buildConfigurationList = 7C49FDF1299930E500D9AE38 /* Build configuration list for PBXProject "UITextField-sandbox" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,51 +112,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 7C8EE16C2992372D00EAAA1B;
-			productRefGroup = 7C8EE1762992372D00EAAA1B /* Products */;
+			mainGroup = 7C49FDED299930E500D9AE38;
+			productRefGroup = 7C49FDF7299930E500D9AE38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C8EE1742992372D00EAAA1B /* Password-Reset */,
+				7C49FDF5299930E500D9AE38 /* UITextField-sandbox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7C8EE1732992372D00EAAA1B /* Resources */ = {
+		7C49FDF4299930E500D9AE38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8EE1852992373600EAAA1B /* LaunchScreen.storyboard in Resources */,
-				7C8EE1822992373600EAAA1B /* Assets.xcassets in Resources */,
+				7C49FE06299930EA00D9AE38 /* LaunchScreen.storyboard in Resources */,
+				7C49FE03299930EA00D9AE38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7C8EE1712992372D00EAAA1B /* Sources */ = {
+		7C49FDF2299930E500D9AE38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C49FE0F29996F4400D9AE38 /* PasswordCriteria.swift in Sources */,
-				7C8EE17D2992372D00EAAA1B /* ViewController.swift in Sources */,
-				7C8EE1912993B62600EAAA1B /* UITextField+Extension.swift in Sources */,
-				7C8EE1962993C74D00EAAA1B /* PasswordTextField.swift in Sources */,
-				7C8EE1942993C29800EAAA1B /* PaddedTextField+Class.swift in Sources */,
-				7CA6C7E82996D59800F80C65 /* PasswordCriteriaView.swift in Sources */,
-				7CE8EA1B299514C700233B27 /* PasswordStatusView.swift in Sources */,
-				7C8EE1792992372D00EAAA1B /* AppDelegate.swift in Sources */,
+				7C49FDFE299930E500D9AE38 /* ViewController.swift in Sources */,
+				7C49FDFA299930E500D9AE38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C8EE1832992373600EAAA1B /* LaunchScreen.storyboard */ = {
+		7C49FE04299930EA00D9AE38 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C8EE1842992373600EAAA1B /* Base */,
+				7C49FE05299930EA00D9AE38 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -206,7 +158,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7C8EE1872992373600EAAA1B /* Debug */ = {
+		7C49FE08299930EA00D9AE38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +218,7 @@
 			};
 			name = Debug;
 		};
-		7C8EE1882992373600EAAA1B /* Release */ = {
+		7C49FE09299930EA00D9AE38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,7 +272,7 @@
 			};
 			name = Release;
 		};
-		7C8EE18A2992373600EAAA1B /* Debug */ = {
+		7C49FE0B299930EA00D9AE38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -329,7 +281,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2C9YH25W4Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Password-Reset/Info.plist";
+				INFOPLIST_FILE = "UITextField-sandbox/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -339,7 +291,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justinasiaulyte.Password-Reset";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinasiaulyte.UITextField-sandbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -347,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		7C8EE18B2992373600EAAA1B /* Release */ = {
+		7C49FE0C299930EA00D9AE38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -356,7 +308,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2C9YH25W4Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Password-Reset/Info.plist";
+				INFOPLIST_FILE = "UITextField-sandbox/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -366,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.justinasiaulyte.Password-Reset";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinasiaulyte.UITextField-sandbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -377,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C8EE1702992372D00EAAA1B /* Build configuration list for PBXProject "Password-Reset" */ = {
+		7C49FDF1299930E500D9AE38 /* Build configuration list for PBXProject "UITextField-sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C8EE1872992373600EAAA1B /* Debug */,
-				7C8EE1882992373600EAAA1B /* Release */,
+				7C49FE08299930EA00D9AE38 /* Debug */,
+				7C49FE09299930EA00D9AE38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C8EE1892992373600EAAA1B /* Build configuration list for PBXNativeTarget "Password-Reset" */ = {
+		7C49FE0A299930EA00D9AE38 /* Build configuration list for PBXNativeTarget "UITextField-sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C8EE18A2992373600EAAA1B /* Debug */,
-				7C8EE18B2992373600EAAA1B /* Release */,
+				7C49FE0B299930EA00D9AE38 /* Debug */,
+				7C49FE0C299930EA00D9AE38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7C8EE16D2992372D00EAAA1B /* Project object */;
+	rootObject = 7C49FDEE299930E500D9AE38 /* Project object */;
 }
