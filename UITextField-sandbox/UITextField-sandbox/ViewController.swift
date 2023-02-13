@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+        setupDismissKeyboardGesture()
     }
 }
 
@@ -25,7 +26,7 @@ extension ViewController {
         textField.backgroundColor = .systemGray6
         textField.delegate = self
 
-        // extra interaction
+        // extra interaction for getting every symbol written in textfield
         textField.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
     }
 
@@ -37,6 +38,18 @@ extension ViewController {
             textField.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: textField.trailingAnchor, multiplier: 2)
         ])
+    }
+}
+
+// MARK: - Gesture recognizer
+extension ViewController {
+    private func setupDismissKeyboardGesture() {
+        let dismissKeyboardTap = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_: )))
+        view.addGestureRecognizer(dismissKeyboardTap)
+    }
+    
+    @objc func viewTapped(_ recognizer: UITapGestureRecognizer) {
+        view.endEditing(true) // resign first responder
     }
 }
 
@@ -58,8 +71,9 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 
-    // if implemented, called in place of textFieldDidEndEditing: ?
+    // when textfield resign first responder. can use text in textfield
     func textFieldDidEndEditing(_ textField: UITextField) {
+        print(textField.text ?? "no text")
     }
 
     // detect - keypress
@@ -76,7 +90,7 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 
-    // called when 'return' key pressed. return NO to ignore.
+    // called when 'return' key pressed. return NO to ignore. Necessary for dismissing keyboard.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true) // resign first responder
         return true
@@ -86,6 +100,6 @@ extension ViewController: UITextFieldDelegate {
 // MARK: - Extra Actions
 extension ViewController {
     @objc func textFieldEditingChanged(_ sender: UITextField) {
-        print("Extra - textFieldEditingChanged: \(sender.text)")
+//        print("Extra - textFieldEditingChanged: \(sender.text)")
     }
 }

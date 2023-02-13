@@ -33,8 +33,10 @@ struct PasswordCriteria {
         text.range(of: "[0-9]+", options: .regularExpression) != nil
     }
     
-    static func specialCharactersMet(_ text: String) -> Bool {
-        text.range(of: ".*[^A-Za-z0-9].*", options: .regularExpression) != nil
+    static func specialCharacterMet(_ text: String) -> Bool {
+        // regex escaped @:?!()$#,.\/
+          return text.range(of: "[@:?!()$#,./\\\\]+", options: .regularExpression) != nil
+//        REMINDER: regex ".*[^A-Za-z0-9].*" includes also other languages spec letters
     }
 }
 

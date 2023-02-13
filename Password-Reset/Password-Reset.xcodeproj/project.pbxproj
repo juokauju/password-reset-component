@@ -66,9 +66,10 @@
 			children = (
 				7C8EE1782992372D00EAAA1B /* AppDelegate.swift */,
 				7C8EE17C2992372D00EAAA1B /* ViewController.swift */,
-				7CE8EA16299510E700233B27 /* Views */,
-				7C8EE18C299237B200EAAA1B /* Files */,
+				7C8EE1952993C74D00EAAA1B /* PasswordTextField.swift */,
+				7CE8EA19299514AA00233B27 /* PasswordStatusView */,
 				7C8EE1922993BD3400EAAA1B /* Utils */,
+				7C8EE18C299237B200EAAA1B /* Files */,
 			);
 			path = "Password-Reset";
 			sourceTree = "<group>";
@@ -92,20 +93,11 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		7CE8EA16299510E700233B27 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7C8EE1952993C74D00EAAA1B /* PasswordTextField.swift */,
-				7CE8EA19299514AA00233B27 /* PasswordStatusView */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		7CE8EA19299514AA00233B27 /* PasswordStatusView */ = {
 			isa = PBXGroup;
 			children = (
-				7CA6C7E72996D59800F80C65 /* PasswordCriteriaView.swift */,
 				7CE8EA1A299514C700233B27 /* PasswordStatusView.swift */,
+				7CA6C7E72996D59800F80C65 /* PasswordCriteriaView.swift */,
 				7C49FE0E29996F4400D9AE38 /* PasswordCriteria.swift */,
 			);
 			name = PasswordStatusView;

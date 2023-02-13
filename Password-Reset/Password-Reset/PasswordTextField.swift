@@ -9,19 +9,34 @@ import UIKit
 
 protocol PasswordTextFieldDelegate: AnyObject {
     func editingChanged(_ sender: PasswordTextField)
+    func editingDidEnd(_ sender: PasswordTextField)
 }
 
 class PasswordTextField: UIView {
-    let errorMessageLabel = UILabel()
+    /**
+     A function one passes in to do custom validation on the text field.
+     
+     - Parameter: textValue: The value of text to validate
+     - Returns: A Bool indicating whether text is valid, and if not a String containing an error message
+     */
+    typealias CustomValidation = (_ textValue: String?) -> (Bool, String)?
+    
+    var customValidation: CustomValidation?
+    weak var delegate: PasswordTextFieldDelegate?
     let textField = UITextField()
     
+    var text: String? {
+        get { return textField.text }
+        set { textField.text = newValue }
+    }
+    
     private let lockImageView = UIImageView(image: UIImage(systemName: "lock.fill"))
-    private let placeholderText: String
     private let eyeButton = UIButton(type: .custom)
     private let dividerView = UIView()
+    private let errorMessageLabel = UILabel()
     
-    weak var delegate: PasswordTextFieldDelegate?
-    
+    private let placeholderText: String
+
     init(placeholderText: String) {
         self.placeholderText = placeholderText
         super.init(frame: .zero)
@@ -34,7 +49,7 @@ class PasswordTextField: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: 200, height: 40)
+        return CGSize(width: 200, height: 60)
     }
 }
 
@@ -107,17 +122,51 @@ extension PasswordTextField {
     }
 }
 
-extension PasswordTextField: UITextFieldDelegate {
-    
-}
-
+// MARK: - Actions
 extension PasswordTextField {
-    @objc func togglePasswordView(_ sender: UIButton) {
+    @objc func togglePasswordView(_ sender: Any) {
         textField.isSecureTextEntry.toggle()
-        sender.isSelected.toggle()
+        eyeButton.isSelected.toggle()
     }
     
     @objc func textFieldEditingChanged(_ sender: UITextField) {
         delegate?.editingChanged(self)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension PasswordTextField: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        delegate?.editingDidEnd(self)
+    }
+
+    // Called when 'return' key pressed. Necessary for dismissing keyboard.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true) // resign first responder
+        return true
+    }
+}
+
+// MARK: - Validation
+extension PasswordTextField {
+    func validate() -> Bool {
+        if let customValidation = customValidation,
+            let customValidationResult = customValidation(text),
+            customValidationResult.0 == false {
+            showError(customValidationResult.1)
+            return false
+        }
+        clearError()
+        return true
+    }
+    
+    private func showError(_ errorMessage: String) {
+        errorMessageLabel.isHidden = false
+        errorMessageLabel.text = errorMessage
+    }
+
+    private func clearError() {
+        errorMessageLabel.isHidden = true
+        errorMessageLabel.text = ""
     }
 }
