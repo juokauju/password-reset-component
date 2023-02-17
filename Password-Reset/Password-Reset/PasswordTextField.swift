@@ -33,7 +33,7 @@ class PasswordTextField: UIView {
     private let lockImageView = UIImageView(image: UIImage(systemName: "lock.fill"))
     private let eyeButton = UIButton(type: .custom)
     private let dividerView = UIView()
-    private let errorMessageLabel = UILabel()
+    let errorMessageLabel = UILabel()
     
     private let placeholderText: String
 

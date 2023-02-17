@@ -8,13 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - Properties
+    
     typealias CustomValidation = PasswordTextField.CustomValidation
-
-    private let stackView = UIStackView()
-    private let newPasswordTextField = PasswordTextField(placeholderText: "New Password")
-    private let confirmPasswordTextField = PasswordTextField(placeholderText: "Re-enter your password")
+    let newPasswordTextField = PasswordTextField(placeholderText: "New Password")
+    let confirmPasswordTextField = PasswordTextField(placeholderText: "Re-enter your password")
+    var alert: UIAlertController?
+    
+    // MARK: - Private
+    
     private let statusView = PasswordStatusView()
     private let resetButton = UIButton(type: .system)
+    private let stackView = UIStackView()
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +32,7 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - Setup
 extension ViewController {
     private func setup() {
         setupNewPassword()
@@ -171,7 +180,7 @@ extension ViewController {
     }
 }
 
-// MARK: Actions
+// MARK: - Actions
 extension ViewController {
     @objc func resetButtonTapped(_ sender: UIButton) {
         view.endEditing(true)
@@ -185,11 +194,26 @@ extension ViewController {
     }
     
     private func showAlert(title: String, message: String) {
-        let alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
         
+        guard let alert = alert else { return }
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         alert.title = title
         alert.message = message
         present(alert, animated: true, completion: nil)
+    }
+}
+
+// MARK: - Tests
+extension ViewController {
+    var newPasswordText: String? {
+        get { return newPasswordTextField.text }
+        set { newPasswordTextField.text = newValue}
+    }
+    
+    var confirmPasswordText: String? {
+        get { return confirmPasswordTextField.text }
+        set { confirmPasswordTextField.text = newValue}
     }
 }
