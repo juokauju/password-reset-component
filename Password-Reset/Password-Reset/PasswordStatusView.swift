@@ -11,7 +11,7 @@ class PasswordStatusView: UIView {
     
     private let stackView = UIStackView()
     
-    private let lengthCriteriaView = PasswordCriteriaView(text: "8-32 characters (no spaces)")
+    let lengthCriteriaView = PasswordCriteriaView(text: "8-32 characters (no spaces)")
     private let uppercaseCriteriaView = PasswordCriteriaView(text: "uppercase letter (A-Z)")
     private let lowerCaseCriteriaView = PasswordCriteriaView(text: "lowercase (a-z)")
     private let digitCriteriaView = PasswordCriteriaView(text: "digit (0-9)")
@@ -137,16 +137,10 @@ extension PasswordStatusView {
     }
     
     func validate(_ text: String) -> Bool {
-        let uppercaseMet = PasswordCriteria.uppercaseMet(text)
-        let lowercaseMet = PasswordCriteria.lowercaseMet(text)
-        let digitMet = PasswordCriteria.digitMet(text)
-        let specialCharacterMet = PasswordCriteria.specialCharacterMet(text)
-
-        let checkable = [uppercaseMet, lowercaseMet, digitMet, specialCharacterMet]
-        let metCriteria = checkable.filter { $0 }
+        let metCriteria = otherCriteriasMet(text)
         let lengthAndNoSpaceMet = PasswordCriteria.lengthAndNoSpaceMet(text)
         
-        if lengthAndNoSpaceMet && metCriteria.count >= 3 {
+        if lengthAndNoSpaceMet && metCriteria {
             return true
         }
         
@@ -160,4 +154,17 @@ extension PasswordStatusView {
         digitCriteriaView.reset()
         specialCharacterCriteriaView.reset()
     }
+    
+    func otherCriteriasMet(_ text: String) -> Bool {
+        let uppercaseMet = PasswordCriteria.uppercaseMet(text)
+        let lowercaseMet = PasswordCriteria.lowercaseMet(text)
+        let digitMet = PasswordCriteria.digitMet(text)
+        let specialCharacterMet = PasswordCriteria.specialCharacterMet(text)
+
+        let checkable = [uppercaseMet, lowercaseMet, digitMet, specialCharacterMet]
+        let metCriteria = checkable.filter { $0 }
+        
+        return metCriteria.count >= 3
+    }
 }
+
