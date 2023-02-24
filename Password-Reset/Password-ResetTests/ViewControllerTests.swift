@@ -118,7 +118,7 @@ class ViewControllerTests_Show_Alert: XCTestCase {
     func testShowSuccess() throws {
         vc.newPasswordText = validPassword
         vc.confirmPasswordText = validPassword
-        vc.resetPasswordButtonTapped(sender: UIButton())
+        vc.resetButtonTapped(UIButton())
 
         XCTAssertNotNil(vc.alert)
         XCTAssertEqual(vc.alert!.title, "Success") // Optional
@@ -127,7 +127,7 @@ class ViewControllerTests_Show_Alert: XCTestCase {
     func testShowError() throws {
         vc.newPasswordText = validPassword
         vc.confirmPasswordText = tooShort
-        vc.resetPasswordButtonTapped(sender: UIButton())
+        vc.resetButtonTapped(UIButton())
 
         XCTAssertNil(vc.alert)
     }

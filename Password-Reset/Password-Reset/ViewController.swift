@@ -79,7 +79,7 @@ extension ViewController {
                 return (false, "Enter your password")
             }
             
-            if text == self.newPasswordTextField.text {
+            guard text == self.newPasswordTextField.text else {
                 return (false, "Password does not match")
             }
             
@@ -184,10 +184,10 @@ extension ViewController {
 extension ViewController {
     @objc func resetButtonTapped(_ sender: UIButton) {
         view.endEditing(true)
-        
+
         let isValidNewPassword = newPasswordTextField.validate()
         let isValidConfirmPassword = confirmPasswordTextField.validate()
-        
+
         if isValidNewPassword && isValidConfirmPassword {
             showAlert(title: "Success", message: "You have successfully changed your password.")
         }
@@ -195,10 +195,10 @@ extension ViewController {
     
     private func showAlert(title: String, message: String) {
         alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
-        
         guard let alert = alert else { return }
-        
+
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
         alert.title = title
         alert.message = message
         present(alert, animated: true, completion: nil)
